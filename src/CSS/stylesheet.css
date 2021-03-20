@@ -1,0 +1,11 @@
+.default-cursor .content {
+    -fx-cursor: hand ;
+}
+
+.text-area {
+    -fx-display-caret: false ;
+}
+
+.text-area *.text {
+    -fx-text-alignment: center;
+}
