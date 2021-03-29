@@ -31,7 +31,6 @@ public class OsluskivacPromena extends Thread {
         boolean krajIgre;
         int brojac = 0;
         while (true) {
-            //System.out.println("RADIM " + poruka + " ima li je");
             try {
 
                 gto = kongui.proveriPromene();
