@@ -101,8 +101,7 @@ public class OsluskivacPromena extends Thread {
                         // textArea.setText(kongui.gto.getIgracNaPotezu());
                         textArea.setText(poruka.substring(0, 1));
                     }
-                } //
-                        //git
+                }       
             } catch (InterruptedException ex) {
                 Logger.getLogger(OsluskivacPromena.class.getName()).log(Level.SEVERE, null, ex);
             }
