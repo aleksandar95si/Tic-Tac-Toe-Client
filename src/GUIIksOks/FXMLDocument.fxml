@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="349.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="349.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIIksOks.FXMLDocumentController">
    <children>
       <GridPane layoutY="28.0" prefHeight="322.0" prefWidth="496.0">
         <columnConstraints>
@@ -67,17 +67,17 @@
         <menus>
           <Menu mnemonicParsing="false" text="Nova igra">
             <items>
-              <MenuItem mnemonicParsing="false" text="Pocni novu igru" />
+              <MenuItem fx:id="novaIgra" mnemonicParsing="false" text="Počni novu igru" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Autor">
+          <Menu mnemonicParsing="false" text="Statistika">
             <items>
-              <MenuItem mnemonicParsing="false" text="Prikazi autora" />
+              <MenuItem fx:id="informacijeOIgracu" mnemonicParsing="false" text="Prikaži statistiku igraca" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Izlaz iz igre">
             <items>
-              <MenuItem mnemonicParsing="false" text="Izadji" />
+              <MenuItem fx:id="izlaz" mnemonicParsing="false" text="Izađi" />
             </items>
           </Menu>
         </menus>

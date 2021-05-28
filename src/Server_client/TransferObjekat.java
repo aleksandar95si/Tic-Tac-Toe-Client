@@ -16,12 +16,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="gdo" type="{http://Server/}korisnik" minOccurs="0"/>
- *         &lt;element name="poruka" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="signal" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="currentRecord" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="gdo" type="{http://Server/}igrac" minOccurs="0"/>
+ *         &lt;element name="polje" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="igracNaPotezu" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="signal" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="krajIgre" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -33,18 +31,14 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "transferObjekat", propOrder = {
     "gdo",
-    "poruka",
-    "signal",
-    "currentRecord",
+    "polje",
     "igracNaPotezu",
     "krajIgre"
 })
 public class TransferObjekat {
 
-    protected Korisnik gdo;
-    protected String poruka;
-    protected boolean signal;
-    protected int currentRecord;
+    protected Igrac gdo;
+    protected String polje;
     protected String igracNaPotezu;
     protected boolean krajIgre;
 
@@ -53,10 +47,10 @@ public class TransferObjekat {
      * 
      * @return
      *     possible object is
-     *     {@link Korisnik }
+     *     {@link Igrac }
      *     
      */
-    public Korisnik getGdo() {
+    public Igrac getGdo() {
         return gdo;
     }
 
@@ -65,67 +59,35 @@ public class TransferObjekat {
      * 
      * @param value
      *     allowed object is
-     *     {@link Korisnik }
+     *     {@link Igrac }
      *     
      */
-    public void setGdo(Korisnik value) {
+    public void setGdo(Igrac value) {
         this.gdo = value;
     }
 
     /**
-     * Gets the value of the poruka property.
+     * Gets the value of the polje property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getPoruka() {
-        return poruka;
+    public String getPolje() {
+        return polje;
     }
 
     /**
-     * Sets the value of the poruka property.
+     * Sets the value of the polje property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setPoruka(String value) {
-        this.poruka = value;
-    }
-
-    /**
-     * Gets the value of the signal property.
-     * 
-     */
-    public boolean isSignal() {
-        return signal;
-    }
-
-    /**
-     * Sets the value of the signal property.
-     * 
-     */
-    public void setSignal(boolean value) {
-        this.signal = value;
-    }
-
-    /**
-     * Gets the value of the currentRecord property.
-     * 
-     */
-    public int getCurrentRecord() {
-        return currentRecord;
-    }
-
-    /**
-     * Sets the value of the currentRecord property.
-     * 
-     */
-    public void setCurrentRecord(int value) {
-        this.currentRecord = value;
+    public void setPolje(String value) {
+        this.polje = value;
     }
 
     /**
@@ -151,7 +113,8 @@ public class TransferObjekat {
     public void setIgracNaPotezu(String value) {
         this.igracNaPotezu = value;
     }
-      /**
+
+    /**
      * Gets the value of the krajIgre property.
      * 
      */
@@ -163,7 +126,8 @@ public class TransferObjekat {
      * Sets the value of the krajIgre property.
      * 
      */
-    public void setKrajIgre(boolean krajIgre) {
-        this.krajIgre = krajIgre;
+    public void setKrajIgre(boolean value) {
+        this.krajIgre = value;
     }
+
 }
